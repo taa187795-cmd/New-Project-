@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جمعية واعتصموا الخيرية - بنجا</title>
+    
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo-area nav-link">
+                <!-- صورة شعار الجمعية المرفقة -->
+                <img src="images/logo.png" alt="شعار جمعية واعتصموا الخيرية ببنجا" class="logo-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/60x60/1a4b84/ffffff?text=شعار+الجمعية'">
+                <div class="logo-text">
+                    <h1>جمعية واعتصموا الخيرية</h1>
+                    <span>بنجا - محافظة سوهاج</span>
+                </div>
+            </a>
+
+            <!-- Search Bar -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="ابحث عن ملف، نشاط، خبر...">
+                <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">الرئيسية</a>
+                <a href="#about" class="nav-link">عن الجمعية</a>
+                <a href="#files" class="nav-link">ملفاتنا</a>
+                <a href="#activities" class="nav-link">أنشطتنا</a>
+                <a href="#achievements" class="nav-link">إنجازاتنا</a>
+                <a href="#news" class="nav-link">الأخبار</a>
+                <a href="#gallery" class="nav-link">معرض الصور</a>
+                <a href="#contact" class="nav-link">تواصل معنا</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-donate" onclick="openModal('formModal')">ساهم معنا</button>
+                <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container (Dynamic Page Views) -->
+    <main id="mainContent">
+
+        <!-- ================= HOME PAGE ================= -->
+        <div id="page-home" class="page-view active">
+            
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <span class="badge">نسخة تجريبية معتمدة</span>
+                    <h1>معًا نصنع أثرًا... ونبني مستقبلًا أفضل</h1>
+                    <p>جمعية واعتصموا الخيرية ببنجا، نعمل في مجالات الخير والتعليم والتنمية وفض المنازعات، ونضع الإنسان في قلب رسالتنا.</p>
+                    <div class="hero-btns">
+                        <a href="#about" class="btn btn-primary nav-link">تعرف على الجمعية</a>
+                        <a href="#files" class="btn btn-outline nav-link">استكشف ملفاتنا</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick About Card -->
+            <section class="section-padding bg-light">
+                <div class="container">
+                    <div class="quick-about-card">
+                        <div class="about-text">
+                            <h2>من نحن؟</h2>
+                            <p>جمعية واعتصموا الخيرية ببنجا، جمعية تعمل على خدمة المجتمع من خلال مجموعة متنوعة من الملفات والمبادرات في مجالات العمل الخيري والتعليم والتنمية وفض المنازعات.</p>
+                        </div>
+                        <div class="about-badge">
+                            <i class="fa-solid fa-building-flag"></i>
+                            <span class="year">تأسست عام 2012</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scope of Work -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>مجالات عمل الجمعية</h2>
+                        <p>ركائزنا الأساسية لتنمية الإنسان وخدمة المجتمع</p>
+                    </div>
+                    <div class="cards-grid-4">
+                        <div class="card scope-card">
+                            <div class="icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <h3>أعمال الخير</h3>
+                            <p>مساندة الأسر والمحتاجين وتنفيذ المبادرات الخيرية الإغاثية.</p>
+                        </div>
+                        <div class="card scope-card">
+                            <div class="icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                            <h3>التعليم</h3>
+                            <p>دعم التعليم والأنشطة التعليمية والتربوية وبناء جيل معرفي.</p>
+                        </div>
+                        <div class="card scope-card">
+                            <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <h3>فض المنازعات</h3>
+                            <p>المساهمة في حل النزاعات وتعزيز الترابط المجتمعي والأهلي.</p>
+                        </div>
+                        <div class="card scope-card">
+                            <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+                            <h3>التنمية</h3>
+                            <p>تنفيذ مبادرات تهدف إلى تطوير المجتمع وتحسين حياة أفراده المستدامة.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Major Projects / Files Summary -->
+            <section class="section-padding bg-light">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>ملفات ومشروعات الجمعية</h2>
+                        <p>برامج متخصصة تستهدف تحقيق أثر مستدام في المجتمع</p>
+                    </div>
+                    <div class="files-grid">
+                        
+                        <!-- File 1: Basmat -->
+                        <div class="file-card">
+                            <div class="file-img">
+                                <img src="https://via.placeholder.com/600x400/1a4b84/ffffff?text=بسمات+واعتصموا" alt="بسمات واعتصموا">
+                            </div>
+                            <div class="file-body">
+                                <h3>بسمات واعتصموا</h3>
+                                <p>ملف يهتم بالأنشطة التعليمية والتربوية والترفيهية للأطفال لزرع القيم وبناء الشخصية.</p>
+                                <div class="file-actions">
+                                    <button class="btn btn-sm btn-primary" onclick="showSubPage('basmat')">اعرف المزيد</button>
+                                    <a href="#contact" class="btn btn-sm btn-outline nav-link">تواصل معنا</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- File 2: Anwar -->
+                        <div class="file-card">
+                            <div class="file-img">
+                                <img src="https://via.placeholder.com/600x400/22c55e/ffffff?text=أنوار+واعتصموا" alt="أنوار واعتصموا">
+                            </div>
+                            <div class="file-body">
+                                <h3>أنوار واعتصموا</h3>
+                                <span class="sub-heading">المدرسة القرآنية المسائية</span>
+                                <p>برنامج تعليمي قرآني يهتم بتعليم القرآن الكريم وتنمية الطلاب من خلال حلقات وأنشطة ومسابقات.</p>
+                                <div class="tags">
+                                    <span>حلقات القرآن</span><span>الأنشطة</span><span>المسابقات</span><span>التكريمات</span>
+                                </div>
+                                <div class="file-actions">
+                                    <button class="btn btn-sm btn-primary" onclick="showSubPage('anwar')">اعرف المزيد</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- File 3: Thimar -->
+                        <div class="file-card">
+                            <div class="file-img">
+                                <img src="https://via.placeholder.com/600x400/0ea5e9/ffffff?text=ثمار+واعتصموا" alt="ثمار واعتصموا">
+                            </div>
+                            <div class="file-body">
+                                <h3>ثمار واعتصموا</h3>
+                                <span class="sub-heading">ملف المساعدات والخدمات الاجتماعية</span>
+                                <p>يهتم بالمساعدات والمبادرات الاجتماعية ودعم الأسر المستفيدة وتوفير الرعاية الكريمة.</p>
+                                <div class="file-actions">
+                                    <button class="btn btn-sm btn-primary" onclick="showSubPage('thimar')">اعرف المزيد</button>
+                                    <button class="btn btn-sm btn-outline" onclick="openModal('formModal')">طلب مساعدة</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- File 4: Hospital -->
+                        <div class="file-card featured">
+                            <div class="file-img">
+                                <img src="https://via.placeholder.com/600x400/0284c7/ffffff?text=مستشفى+نسائم+واعتصموا" alt="مستشفى نسائم واعتصموا">
+                            </div>
+                            <div class="file-body">
+                                <h3>مستشفى نسائم واعتصموا</h3>
+                                <span class="sub-heading">مشروع صحي تابع للجمعية</span>
+                                <p>صرح طبي يهدف لتقديم خدمات صحية متكاملة وبأسعار رمزية لخدمة أهالي بنجا والقرى المجاورة.</p>
+                                <div class="file-actions">
+                                    <button class="btn btn-sm btn-primary" onclick="showSubPage('hospital')">اعرف المزيد</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics Section -->
+            <section class="stats-section section-padding">
+                <div class="container">
+                    <div class="section-title white">
+                        <h2>إحصائيات بالأرقام</h2>
+                        <p>مسيرة حافلة بالعطاء والأثر التنموي والمجتمعي</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="counter" data-target="15000">0</span>
+                            <p>مستفيد</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <span class="counter" data-target="350">0</span>
+                            <p>مبادرة ونشاط</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span class="counter" data-target="12">0</span>
+                            <p>عامًا من العطاء</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span class="counter" data-target="4">0</span>
+                            <p>مجالات رئيسية</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <span class="counter" data-target="4">0</span>
+                            <p>ملفات ومشروعات</p>
+                        </div>
+                    </div>
+                    <p class="placeholder-note">* هذه أرقام تجريبية في النسخة الحالية وسيتم استبدالها بالبيانات الرسمية لاحقًا.</p>
+                </div>
+            </section>
+
+            <!-- Contribution Callout -->
+            <section class="section-padding bg-primary white-text text-center">
+                <div class="container">
+                    <h2>ساهم في صناعة الأثر</h2>
+                    <p class="lead">مساهمتك يمكن أن تكون سببًا في تعليم طفل، أو مساعدة أسرة، أو دعم مبادرة، أو صناعة فرصة جديدة.</p>
+                    <button class="btn btn-light" onclick="openModal('donateModal')">طرق المساهمة</button>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ================= ABOUT PAGE ================= -->
+        <div id="page-about" class="page-view">
+            <section class="page-header">
+                <div class="container">
+                    <h2>عن الجمعية</h2>
+                    <p>تعرف على رؤيتنا ورسالتنا وقيمنا في جمعية واعتصموا الخيرية ببنجا</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="about-details">
+                        <div class="text-content">
+                            <h3>رؤيتنا ورسالتنا</h3>
+                            <p>نسعى في جمعية واعتصموا الخيرية ببنجا إلى بناء مجتمع متكافل، متميز تعليماً ورعاة اجتماعياً وصحياً. ترتكز أعمالنا على الشفافية والإخلاص والاهتمام بالإنسان كأساس لنهضة المجتمع.</p>
+                            
+                            <h3>أهداف الجمعية الرئيسية</h3>
+                            <ul class="styled-list">
+                                <li>تقديم الدعم الاجتماعي والمساعدات العينية والمادية للأسر المستحقة.</li>
+                                <li>الاهتمام بالنشاط التعليمي والتربوي وحفظ كتاب الله للأجيال الناشئة.</li>
+                                <li>تقديم الرعاية الصحية المتميزة من خلال المشروعات الطبية التابعة.</li>
+                                <li>السعي في فض المنازعات وبث روح التسامح والإصلاح بين أفراد المجتمع.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= FILES LIST PAGE ================= -->
+        <div id="page-files" class="page-view">
+            <section class="page-header">
+                <div class="container">
+                    <h2>ملفات الجمعية ومشروعاتها</h2>
+                    <p>استعرض التفاصيل الكاملة لجميع مشروعات ومراكز الجمعية</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="files-grid">
+                        <div class="file-card">
+                            <div class="file-body">
+                                <h3>بسمات واعتصموا</h3>
+                                <p>ملف الأنشطة التعليمية والتربوية والترفيهية للأطفال.</p>
+                                <button class="btn btn-primary btn-sm" onclick="showSubPage('basmat')">التفاصيل الكاملة</button>
+                            </div>
+                        </div>
+                        <div class="file-card">
+                            <div class="file-body">
+                                <h3>أنوار واعتصموا (المدرسة القرآنية)</h3>
+                                <p>برنامج تعليم وتكريم حفظة القرآن الكريم والأنشطة الإيمانية.</p>
+                                <button class="btn btn-primary btn-sm" onclick="showSubPage('anwar')">التفاصيل الكاملة</button>
+                            </div>
+                        </div>
+                        <div class="file-card">
+                            <div class="file-body">
+                                <h3>ثمار واعتصموا (الخدمات الاجتماعية)</h3>
+                                <p>المساعدات والرعاية الدورية للأسر المتعففة.</p>
+                                <button class="btn btn-primary btn-sm" onclick="showSubPage('thimar')">التفاصيل الكاملة</button>
+                            </div>
+                        </div>
+                        <div class="file-card">
+                            <div class="file-body">
+                                <h3>مستشفى نسائم واعتصموا</h3>
+                                <p>المشروع الطبي الخيري المجهز لخدمة أهالي القرية.</p>
+                                <button class="btn btn-primary btn-sm" onclick="showSubPage('hospital')">التفاصيل الكاملة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= SUB PAGE: BASMAT ================= -->
+        <div id="sub-basmat" class="page-view">
+            <section class="page-header green">
+                <div class="container">
+                    <h2>ملف: بسمات واعتصموا</h2>
+                    <p>الأنشطة التعليمية والتربوية المخصصة للأطفال</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="subpage-grid">
+                        <div class="main-info">
+                            <h3>نبذة عن الملف</h3>
+                            <p>يهتم ملف "بسمات واعتصموا" بغرس القيم الأخلاقية والتربوية والمهارات المباشرة لدى الأطفال عبر برامج تفاعلية مرحة ومفيدة.</p>
+                            
+                            <h3>الأهداف والخدمات</h3>
+                            <ul class="styled-list">
+                                <li>تنظيم ورش عمل تنموية وتربوية أسبوعية.</li>
+                                <li>رحلات ترفيهية وتعليمية واستكشافية.</li>
+                                <li>تنمية مهارات التفكير والإبداع لدى الأطفال.</li>
+                            </ul>
+
+                            <div class="stats-box">
+                                <h4>إحصائيات تجريبية:</h4>
+                                <p>150 طفلاً مستفيداً | 25 نشاطاً سنوياً | 10 مشرفين تربويين</p>
+                            </div>
+
+                            <button class="btn btn-primary" onclick="openModal('formModal')">سجل في بسمات واعتصموا</button>
+                        </div>
+                        <div class="side-info">
+                            <div class="card manager-card">
+                                <h4>المسؤول عن الملف</h4>
+                                <p>أ/ أحمد محمود (بيانات وهمية)</p>
+                                <p>📞 01000000001 (تجريبي)</p>
+                                <div class="btn-group">
+                                    <a href="tel:01000000001" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> اتصال</a>
+                                    <a href="https://wa.me/201000000001" target="_blank" class="btn btn-sm btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= SUB PAGE: ANWAR ================= -->
+        <div id="sub-anwar" class="page-view">
+            <section class="page-header green">
+                <div class="container">
+                    <h2>ملف: أنوار واعتصموا</h2>
+                    <p>المدرسة القرآنية المسائية ببنجا</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="subpage-grid">
+                        <div class="main-info">
+                            <h3>عن المدرسة القرآنية</h3>
+                            <p>برنامج تعليمي تربوي متكامل يهدف إلى تحفيظ القرآن الكريم وتجويده وربط الناشئة بأخلاق القرآن.</p>
+                            
+                            <div class="stats-box grid-4">
+                                <div><strong>320</strong> طالبًا وطالبة</div>
+                                <div><strong>18</strong> حلقة تعليمية</div>
+                                <div><strong>14</strong> معلمًا ومعلمة</div>
+                                <div><strong>42</strong> فعالية ومسابقة</div>
+                            </div>
+
+                            <div class="cta-box">
+                                <h3>سجل معنا في المدرسة القرآنية</h3>
+                                <p>انضم الآن لحلقات التحفيظ المسائية المتاحة لجميع الأعمار.</p>
+                                <button class="btn btn-primary" onclick="openModal('formModal')">افتح نموذج التسجيل</button>
+                            </div>
+                        </div>
+                        <div class="side-info">
+                            <div class="card manager-card">
+                                <h4>المسؤول عن الملف</h4>
+                                <p>الشيخ/ محمد علي (بيانات وهمية)</p>
+                                <p>📞 01000000002 (تجريبي)</p>
+                                <div class="btn-group">
+                                    <a href="tel:01000000002" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> اتصال</a>
+                                    <a href="https://wa.me/201000000002" target="_blank" class="btn btn-sm btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= SUB PAGE: THIMAR ================= -->
+        <div id="sub-thimar" class="page-view">
+            <section class="page-header">
+                <div class="container">
+                    <h2>ملف: ثمار واعتصموا</h2>
+                    <p>المساعدات والخدمات الاجتماعية والتكافل</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="subpage-grid">
+                        <div class="main-info">
+                            <h3>عن خدمات ثمار واعتصموا</h3>
+                            <p>يرتكز الملف على كفالة الأسر المتعففة، تقديم السلات الغذائية الدورية، والمساعدات الطارئة ورعاية الأيتام بكفالة كريمة.</p>
+                            <button class="btn btn-primary" onclick="openModal('formModal')">تقديم طلب مساعدة</button>
+                        </div>
+                        <div class="side-info">
+                            <div class="card manager-card">
+                                <h4>المسؤول عن الملف</h4>
+                                <p>أ/ محمود السيد (بيانات وهمية)</p>
+                                <p>📞 01000000003 (تجريبي)</p>
+                                <div class="btn-group">
+                                    <a href="tel:01000000003" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> اتصال</a>
+                                    <a href="https://wa.me/201000000003" target="_blank" class="btn btn-sm btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= SUB PAGE: HOSPITAL ================= -->
+        <div id="sub-hospital" class="page-view">
+            <section class="page-header">
+                <div class="container">
+                    <h2>مستشفى نسائم واعتصموا</h2>
+                    <p>الصرح الطبي الخيري التابع للجمعية</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="subpage-grid">
+                        <div class="main-info">
+                            <h3>عن المستشفى والخدمات الصحية</h3>
+                            <p>تضم مستشفى نسائم عيادات خارجية في تخصصات متنوعة، وقسم للطوارئ وصيدلية خيرية توفر العلاج بأسعار رمزية.</p>
+                            <ul class="styled-list">
+                                <li>عيادات الأطفال والبا any والطوارئ.</li>
+                                <li>معمل تحاليل وأشعة مجهز.</li>
+                                <li>قافلة طبية شهرية مجانية.</li>
+                            </ul>
+                        </div>
+                        <div class="side-info">
+                            <div class="card manager-card">
+                                <h4>إدارة المستشفى</h4>
+                                <p>د/ خالد عبد الله (بيانات وهمية)</p>
+                                <p>📞 01000000004 (تجريبي)</p>
+                                <div class="btn-group">
+                                    <a href="tel:01000000004" class="btn btn-sm btn-outline"><i class="fa-solid fa-phone"></i> اتصال</a>
+                                    <a href="https://wa.me/201000000004" target="_blank" class="btn btn-sm btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= ACTIVITIES & EVENTS PAGE ================= -->
+        <div id="page-activities" class="page-view">
+            <section class="page-header">
+                <div class="container">
+                    <h2>القادم من فعالياتنا وأنشتطنا</h2>
+                    <p>تابع جديد المبادرات والفعاليات المجتمعية والمشاركات</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="cards-grid-3">
+                        <div class="card event-card">
+                            <div class="event-date">15 سبتمبر 2026</div>
+                            <h3>مسابقة القرآن الكريم السنوية</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> بنجا - مقر أنوار واعتصموا</p>
+                            <span class="tag">أنوار واعتصموا</span>
+                            <button class="btn btn-sm btn-outline" onclick="openModal('formModal')">التفاصيل والتسجيل</button>
+                        </div>
+                        <div class="card event-card">
+                            <div class="event-date">20 سبتمبر 2026</div>
+                            <h3>يوم مفتوح للأطفال والأيتام</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> بنجا - قاعة الجمعية</p>
+                            <span class="tag">بسمات واعتصموا</span>
+                            <button class="btn btn-sm btn-outline" onclick="openModal('formModal')">التفاصيل والتسجيل</button>
+                        </div>
+                        <div class="card event-card">
+                            <div class="event-date">01 أكتوبر 2026</div>
+                            <h3>حملة الخير والمساعدات الشتوية</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> بنجا والقرى المجاورة</p>
+                            <span class="tag">ثمار واعتصموا</span>
+                            <button class="btn btn-sm btn-outline" onclick="openModal('formModal')">التفاصيل والتسجيل</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= ACHIEVEMENTS PAGE ================= -->
+        <div id="page-achievements" class="page-view">
+            <section class="page-header">
+                <div class="container">
+                    <h2>إنجازات الجمعية</h2>
+                    <p>محطات مضيئة من مسيرة العطاء المجتمعي المستمر</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">2023 - 2024</div>
+                            <div class="content">
+                                <h3>تطوير وتحديث مستشفى نسائم واعتصموا</h3>
+                                <p>إضافة أجهزة طبية حديثة وافتتاح عيادات تخصصية جديدة لتوسيع نطاق الخدمة.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">2022</div>
+                            <div class="content">
+                                <h3>تخريج الدفعة العاشرة من حفظة كتاب الله</h3>
+                                <p>تكريم أكثر من 80 طالباً وطالبة أتموا حفظ وتجويد القرآن الكريم كاملاً.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">2020</div>
+                            <div class="content">
+                                <h3>إطلاق مبادرة الإغاثة والتكافل المجتمعي</h3>
+                                <p>تقديم دعم عيني ومادي لأكثر من 2000 أسرة متضررة خلال الظروف الاستثنائية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= NEWS PAGE ================= -->
+        <div id="page-news" class="page-view">
+            <section class="page-header">
+                <div class="container">
+                    <h2>مركز الأخبار</h2>
+                    <p>آخر التغطيات والأنباء الخاصة بجمعية واعتصموا ببنجا</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="cards-grid-3">
+                        <div class="card news-card">
+                            <img src="https://via.placeholder.com/400x250/1a4b84/ffffff?text=خبر+تجريبي+1" alt="خبر">
+                            <div class="news-body">
+                                <span class="date">10 أغسطس 2026</span>
+                                <h3>انطلاق فعاليات النشاط الصيفي للأطفال</h3>
+                                <p>بدأت الجمعية تنفيذ برامج التنمية والتربية لملف بسمات واعتصموا لهذا العام...</p>
+                                <a href="#" class="read-more" onclick="alert('خبر تجريبي للعرض فقط.'); return false;">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+                        <div class="card news-card">
+                            <img src="https://via.placeholder.com/400x250/22c55e/ffffff?text=خبر+تجريبي+2" alt="خبر">
+                            <div class="news-body">
+                                <span class="date">01 أغسطس 2026</span>
+                                <h3>تكريم المتميزين في التصفية القرآنية</h3>
+                                <p>شهدت المدرسة القرآنية المسائية حفل توزيع الجوائز على الطلاب الفائزين...</p>
+                                <a href="#" class="read-more" onclick="alert('خبر تجريبي للعرض فقط.'); return false;">اقرأ المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= GALLERY PAGE ================= -->
+        <div id="page-gallery" class="page-view">
+            <section class="page-header">
+                <div class="container">
+                    <h2>معرض الصور</h2>
+                    <p>توثيق لمختلف الأنشطة والفعاليات والمبادرات</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <!-- Filters -->
+                    <div class="gallery-filters">
+                        <button class="filter-btn active" data-filter="all">الكل</button>
+                        <button class="filter-btn" data-filter="basmat">بسمات</button>
+                        <button class="filter-btn" data-filter="anwar">أنوار</button>
+                        <button class="filter-btn" data-filter="thimar">ثمار</button>
+                        <button class="filter-btn" data-filter="hospital">المستشفى</button>
+                    </div>
+
+                    <!-- Gallery Grid -->
+                    <div class="gallery-grid">
+                        <div class="gallery-item basmat">
+                            <img src="https://via.placeholder.com/400x300/1a4b84/ffffff?text=نشاط+بسمات" alt="بسمات">
+                        </div>
+                        <div class="gallery-item anwar">
+                            <img src="https://via.placeholder.com/400x300/22c55e/ffffff?text=حلقة+قرآن" alt="أنوار">
+                        </div>
+                        <div class="gallery-item thimar">
+                            <img src="https://via.placeholder.com/400x300/0ea5e9/ffffff?text=توزيع+مساعدات" alt="ثمار">
+                        </div>
+                        <div class="gallery-item hospital">
+                            <img src="https://via.placeholder.com/400x300/0284c7/ffffff?text=العيادات+الخارجية" alt="المستشفى">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= CONTACT PAGE ================= -->
+        <div id="page-contact" class="page-view">
+            <section class="page-header">
+                <div class="container">
+                    <h2>تواصل معنا</h2>
+                    <p>يسعدنا استقبال استفساراتكم ومقترحاتكم وتواصلكم معنا</p>
+                </div>
+            </section>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="contact-grid">
+                        <!-- Basic Info -->
+                        <div class="contact-info">
+                            <h3>بيانات العنوان والتواصل العام</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> <strong>الموقع:</strong> بنجا – محافظة سوهاج – مصر</p>
+                            <p><i class="fa-solid fa-phone"></i> <strong>الهاتف التجريبي:</strong> 01000000000</p>
+                            <p><i class="fa-solid fa-envelope"></i> <strong>البريد الإلكتروني:</strong> info@example.com</p>
+                            
+                            <hr class="my-4">
+
+                            <h3>مسؤولو الملفات (بيانات وهمية)</h3>
+                            <ul class="managers-list">
+                                <li>
+                                    <span>مسؤول بسمات واعتصموا:</span>
+                                    <div>01000000001 
+                                        <a href="tel:01000000001" class="btn btn-xs btn-outline">اتصال</a>
+                                        <a href="https://wa.me/201000000001" target="_blank" class="btn btn-xs btn-whatsapp">واتساب</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>مسؤول أنوار واعتصموا:</span>
+                                    <div>01000000002 
+                                        <a href="tel:01000000002" class="btn btn-xs btn-outline">اتصال</a>
+                                        <a href="https://wa.me/201000000002" target="_blank" class="btn btn-xs btn-whatsapp">واتساب</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>مسؤول ثمار واعتصموا:</span>
+                                    <div>01000000003 
+                                        <a href="tel:01000000003" class="btn btn-xs btn-outline">اتصال</a>
+                                        <a href="https://wa.me/201000000003" target="_blank" class="btn btn-xs btn-whatsapp">واتساب</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>مسؤول مستشفى نسائم:</span>
+                                    <div>01000000004 
+                                        <a href="tel:01000000004" class="btn btn-xs btn-outline">اتصال</a>
+                                        <a href="https://wa.me/201000000004" target="_blank" class="btn btn-xs btn-whatsapp">واتساب</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Map Placeholder -->
+                        <div class="map-box">
+                            <div class="map-placeholder">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <p>خريطة توضيحية - موقع الجمعية ببنجا، محافظة سوهاج</p>
+                                <small>(سيتم ربط الخريطة الحية من Google Maps لاحقاً)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="شعار الجمعية" onerror="this.onerror=null; this.src='https://via.placeholder.com/50x50/ffffff/1a4b84?text=شعار'">
+                    <h3>جمعية واعتصموا الخيرية</h3>
+                </div>
+                <p>جمعية خيرية تنموية تعمل ببنجا - محافظة سوهاج، تسعى لرعاية الإنسان وتنمية المجتمع في مختلف المجالات.</p>
+            </div>
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#about" class="nav-link">عن الجمعية</a></li>
+                    <li><a href="#files" class="nav-link">ملفاتنا</a></li>
+                    <li><a href="#activities" class="nav-link">أنشطتنا</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>ملفات الجمعية</h4>
+                <ul>
+                    <li><a href="#" onclick="showSubPage('basmat')">بسمات واعتصموا</a></li>
+                    <li><a href="#" onclick="showSubPage('anwar')">أنوار واعتصموا</a></li>
+                    <li><a href="#" onclick="showSubPage('thimar')">ثمار واعتصموا</a></li>
+                    <li><a href="#" onclick="showSubPage('hospital')">مستشفى نسائم</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>تابعنا على</h4>
+                <div class="social-icons">
+                    <a href="#" title="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="تويتر"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" title="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" title="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 جمعية واعتصموا الخيرية ببنجا – جميع الحقوق محفوظة</p>
+                <p class="demo-badge">نسخة تجريبية معتمدة للتطوير والمعاينة الرسمية</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Modal (Placeholders) -->
+    <div class="modal" id="formModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('formModal')">&times;</span>
+            <div class="text-center">
+                <i class="fa-solid fa-file-signature modal-icon"></i>
+                <h3>استمارة تقديم / تسجيل تجريبية</h3>
+                <p class="modal-notice">سيتم ربط هذه الاستمارة بالنموذج الرسمي (Google Forms) لاحقاً عند الاعتماد.</p>
+                <p>لا يتم تخزين أي بيانات شخصية داخل هذه النسخة التجريبية حالياً.</p>
+                <button class="btn btn-primary" onclick="closeModal('formModal')">حسناً، فهمت</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Donate Modal -->
+    <div class="modal" id="donateModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('donateModal')">&times;</span>
+            <div class="text-center">
+                <i class="fa-solid fa-hand-holding-heart modal-icon"></i>
+                <h3>طرق المساهمة والدعم</h3>
+                <div class="placeholder-box">
+                    <p>سيتم إضافة بيانات التبرع الحسابية والتجارية الرسمية فور اعتمادها وتوفيرها من إدارة الجمعية.</p>
+                </div>
+                <button class="btn btn-primary" onclick="closeModal('donateModal')">إغلاق</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
